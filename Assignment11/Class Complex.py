@@ -29,7 +29,7 @@ class Complex:
         else:
             print(self.a, self.b, "i")
 
-x1 = Complex(5, 4)
+x1 = Complex(7, 4)
 x1.show()
 
 x2 = Complex(2, -7)

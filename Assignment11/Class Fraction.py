@@ -50,7 +50,7 @@ class Fraction:
     def show(self):
         print(self.n , "/" , self.d)
 
-f1 = Fraction(15, 5)
+f1 = Fraction(15, 3)
 f1.show()
 
 f2 = Fraction(13, 2)
