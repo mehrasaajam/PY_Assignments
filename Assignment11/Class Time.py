@@ -60,7 +60,7 @@ def sec_to_time():
     result = Time(hour, minute, second)
     result.show()
 
-t1 = Time(7, 18, 8)
+t1 = Time(6, 18, 8)
 t1.show()
 
 t2 = Time(4, 49, 53)
