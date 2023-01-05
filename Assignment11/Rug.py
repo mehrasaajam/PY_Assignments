@@ -27,4 +27,5 @@ def generate_rug():
                 m[i,n-1-j] = x[j]
         print(m)
 
+
 generate_rug()
