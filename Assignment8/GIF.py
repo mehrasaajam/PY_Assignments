@@ -12,4 +12,4 @@ for file_name in file_list:
     image = imageio.v2.imread(file_path)
     images.append(image)
 
-imageio.mimsave("my_GIF.gif", images)
+imageio.mimsave("my__GIF.gif", images)
