@@ -143,9 +143,9 @@ def qr_code():
     img.save("qrcode.png")
 
 print("welcome to store")
+read_from_database()
 
 while True:
-    read_from_database()
     show_menu()
     choice = int(input("enter your choice: "))
 
