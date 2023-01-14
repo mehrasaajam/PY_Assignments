@@ -16,7 +16,7 @@ class Green_fish(arcade.Sprite):
 class Pink_fish(arcade.Sprite):
     def __init__(self, w, h):
         super().__init__(":resources:images/enemies/fishPink.png")
-        self.center_x = 0.95 * w
+        self.center_x = 1.05 * w
         self.center_y = random.randint(0, h)
         self.width = 60
         self.height = 60
@@ -38,10 +38,9 @@ class Game(arcade.Window):
         self.enemy.draw()
 
     def on_key_press(self, symbol, modifiers):
-        print(symbol)
-        if symbol == 97:
+        if symbol == arcade.key.DOWN:
             self.me.center_y -= self.me.speed
-        elif symbol == 100:
+        elif symbol == arcade.key.UP:
             self.me.center_y += self.me.speed
     
     def on_update(self, delta_time):
