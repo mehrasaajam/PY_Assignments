@@ -4,7 +4,7 @@ import arcade
 
 class Green_fish(arcade.Sprite):
     def __init__(self, game, name):
-        super().__init__(":resources:images/enemies/fishGreen.png")
+        super().__init__(":resources:images/enemy_list/fishGreen.png")
         self.center_x = 0.05 * game.width
         self.center_y = game.height// 2
         self.angle = 180
@@ -15,7 +15,7 @@ class Green_fish(arcade.Sprite):
 
 class Pink_fish(arcade.Sprite):
     def __init__(self, w, h):
-        super().__init__(":resources:images/enemies/fishPink.png")
+        super().__init__(":resources:images/enemy_list/fishPink.png")
         self.center_x = 1.05 * w
         self.center_y = random.randint(0, h)
         self.width = 60
