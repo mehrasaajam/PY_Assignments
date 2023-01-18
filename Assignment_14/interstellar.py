@@ -30,7 +30,6 @@ class Game(arcade.Window):
             self.heart_list.append(heart)
             
 
-
     def on_draw(self):
         arcade.start_render()
         arcade.draw_lrwh_rectangle_textured(0, 0, self.width, self.height, self.background)
@@ -105,4 +104,3 @@ class Game(arcade.Window):
 
 window = Game()
 arcade.run()
-
