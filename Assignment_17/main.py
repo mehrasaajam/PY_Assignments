@@ -12,37 +12,37 @@ def c():
     main_window.text_box.setText("")
 
 def dot():
-    main_window.text_box.setText(main_window.text_box.text()+'.')
+    main_window.text_box.setText(main_window.text_box.text() + '.')
 
 def zero():
-    main_window.text_box.setText(main_window.text_box.text()+'0')
+    main_window.text_box.setText(main_window.text_box.text() + '0')
 
 def one():
     main_window.text_box.setText(main_window.text_box.text()+'1')
 
 def two():
-    main_window.text_box.setText(main_window.text_box.text()+'2')
+    main_window.text_box.setText(main_window.text_box.text() + '2')
 
 def three():
-    main_window.text_box.setText(main_window.text_box.text()+'3')
+    main_window.text_box.setText(main_window.text_box.text() + '3')
 
 def four():
-    main_window.text_box.setText(main_window.text_box.text()+'4')
+    main_window.text_box.setText(main_window.text_box.text() + '4')
 
 def five():
-    main_window.text_box.setText(main_window.text_box.text()+'5')
+    main_window.text_box.setText(main_window.text_box.text() + '5')
 
 def six():
-    main_window.text_box.setText(main_window.text_box.text()+'6')
+    main_window.text_box.setText(main_window.text_box.text() + '6')
 
 def seven():
-    main_window.text_box.setText(main_window.text_box.text()+'7')
+    main_window.text_box.setText(main_window.text_box.text() + '7')
 
 def eight():
-    main_window.text_box.setText(main_window.text_box.text()+'8')
+    main_window.text_box.setText(main_window.text_box.text() + '8')
 
 def nine():
-    main_window.text_box.setText(main_window.text_box.text()+'9')
+    main_window.text_box.setText(main_window.text_box.text() + '9')
 
 def plus():
     global op
