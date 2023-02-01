@@ -1,3 +1,3 @@
 #Calculator app
 
-![README_image_17_2](https://user-images.githubusercontent.com/118259124/216038179-28d65e62-0e6a-4c93-bec2-b2913ccca18b.png)
+![README_image_17_2](https://user-images.githubusercontent.com/118259124/216039385-186b0ec6-74f8-4c8a-b628-049b569fb76c.png)
