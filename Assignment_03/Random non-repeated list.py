@@ -13,7 +13,7 @@ if n>b-a:
 
 else:
     while len(list)<n:
-        x = random.randint(0, 1000)
+        x = random.randint(a, b)
 
         if x in list:
             continue

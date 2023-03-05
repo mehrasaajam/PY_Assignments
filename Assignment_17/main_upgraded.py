@@ -1,4 +1,5 @@
 
+from functools import partial
 from PySide6.QtWidgets import QApplication
 from PySide6.QtUiTools import QUiLoader
 import math
@@ -11,38 +12,8 @@ def backspace():
 def c():
     main_window.text_box.setText("")
 
-def dot():
-    main_window.text_box.setText(main_window.text_box.text() + '.')
-
-def zero():
-    main_window.text_box.setText(main_window.text_box.text() + '0')
-
-def one():
-    main_window.text_box.setText(main_window.text_box.text()+'1')
-
-def two():
-    main_window.text_box.setText(main_window.text_box.text() + '2')
-
-def three():
-    main_window.text_box.setText(main_window.text_box.text() + '3')
-
-def four():
-    main_window.text_box.setText(main_window.text_box.text() + '4')
-
-def five():
-    main_window.text_box.setText(main_window.text_box.text() + '5')
-
-def six():
-    main_window.text_box.setText(main_window.text_box.text() + '6')
-
-def seven():
-    main_window.text_box.setText(main_window.text_box.text() + '7')
-
-def eight():
-    main_window.text_box.setText(main_window.text_box.text() + '8')
-
-def nine():
-    main_window.text_box.setText(main_window.text_box.text() + '9')
+def num(x):
+    main_window.text_box.setText(main_window.text_box.text() + x)
 
 def plus():
     global op
@@ -143,22 +114,22 @@ def result():
 
 app = QApplication([])
 loader = QUiLoader()
-main_window = loader.load("Calculator.ui")
+main_window = loader.load("Calculator_upgraded.ui")
 main_window.show()
 
 main_window.btn_backspace.clicked.connect(backspace)
 main_window.btn_c.clicked.connect(c)
-main_window.btn_dot.clicked.connect(dot)
-main_window.btn_0.clicked.connect(zero)
-main_window.btn_1.clicked.connect(one)
-main_window.btn_2.clicked.connect(two)
-main_window.btn_3.clicked.connect(three)
-main_window.btn_4.clicked.connect(four)
-main_window.btn_5.clicked.connect(five)
-main_window.btn_6.clicked.connect(six)
-main_window.btn_7.clicked.connect(seven)
-main_window.btn_8.clicked.connect(eight)
-main_window.btn_9.clicked.connect(nine)
+main_window.btn_dot.clicked.connect(partial(num, "."))
+main_window.btn_0.clicked.connect(partial(num, "0"))
+main_window.btn_1.clicked.connect(partial(num, "1"))
+main_window.btn_2.clicked.connect(partial(num, "2"))
+main_window.btn_3.clicked.connect(partial(num, "3"))
+main_window.btn_4.clicked.connect(partial(num, "4"))
+main_window.btn_5.clicked.connect(partial(num, "5"))
+main_window.btn_6.clicked.connect(partial(num, "6"))
+main_window.btn_7.clicked.connect(partial(num, "7"))
+main_window.btn_8.clicked.connect(partial(num, "8"))
+main_window.btn_9.clicked.connect(partial(num, "9"))
 main_window.btn_plus.clicked.connect(plus)
 main_window.btn_sub.clicked.connect(sub)
 main_window.btn_mul.clicked.connect(mul)

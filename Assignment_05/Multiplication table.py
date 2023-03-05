@@ -4,6 +4,7 @@ def Multiplication_table(n, m):
     m_t = []
     for i in range(n+1):
         m_t.append([i]*(m+1))
+    print(m_t)
 
     for i in range(0, n+1):
 

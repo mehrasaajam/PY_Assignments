@@ -49,7 +49,7 @@ elif op == "sqrt":
         result = math.sqrt(a)
     
 elif op == "log":   
-    result = math.log(a)
+    result = math.log(a, 10)
 
 elif op == "sin":   
     result = math.sin(a)
