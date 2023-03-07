@@ -1,4 +1,4 @@
-TIC TOK TOE Game
+#TIC TOK TOE Game
 
 Tic-tac-toe is played on a three-by-three grid by two players ('Player VS Player' or 'Player VS CPU'),who alternately place the marks X and O in one of the nine spaces in the grid.
 
