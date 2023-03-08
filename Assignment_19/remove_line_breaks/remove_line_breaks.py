@@ -1,12 +1,12 @@
 
 import sys
+import re
 from PySide6.QtWidgets import QApplication, QMessageBox
 from PySide6.QtUiTools import QUiLoader
 
 def run():
-    first_txt = main_window.text_edit.text()
-    second_txt = first_txt.replace(r'\n', ' ').replace(r'\r', '')
-    main_window.text_first.setText(second_txt)
+    edited = main_window.first_txt.toPlainText().replace("\n", " ")
+    main_window.second_txt.setPlainText(edited)
 
 app = QApplication(sys.argv)
 
